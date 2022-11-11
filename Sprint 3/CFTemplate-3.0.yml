@@ -966,7 +966,7 @@ Resources:
   s3Bucket1:
     Type: AWS::S3::Bucket
     Properties: 
-      AccessControl: PublicRead | BucketOwnerFullControl
+      AccessControl: PublicRead
       BucketName: wordpress-webobject-bucket-01
       Tags:
         - Key: Name
@@ -974,8 +974,7 @@ Resources:
   s3Bucket2:
     Type: AWS::S3::Bucket
     Properties: 
-      AccessControl: Private | BucketOwnerFullControl
-      BucketEncryption: 
+      AccessControl: Private
       BucketName: whiteboard-cloudtrail-bucket-02
       Tags:
         - Key: Name
@@ -983,7 +982,7 @@ Resources:
   s3Bucket3:
     Type: AWS::S3::Bucket
     Properties:
-      AccessControl: Private | BucketOwnerFullControl
+      AccessControl: Private
       VersioningConfiguration:
         Status: Enabled 
       BucketName: whiteboard-codepipeline-bucket-03
@@ -993,7 +992,7 @@ Resources:
   s3Bucket4:
     Type: AWS::S3::Bucket
     Properties:
-      AccessControl: Private | BucketOwnerFullControl
+      AccessControl: Private
       VersioningConfiguration:
         Status: Enabled 
       BucketName: whiteboard-ec2-backup-bucket-0101
